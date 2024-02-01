@@ -1,0 +1,23 @@
+<div class="row">
+  <form class="col s12" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="input-field col s6">
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <label for="password">Password:</label>
+        <input type="password" id="password" formControlName="password" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <label for="dias">Dias:</label>
+        <input type="number" id="dias" formControlName="dias" required>
+      </div>
+    </div>
+    <button type="submit">Registrar Usuario</button>
+  </form>
+</div>

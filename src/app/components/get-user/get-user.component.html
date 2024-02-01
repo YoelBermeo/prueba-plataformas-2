@@ -1,0 +1,30 @@
+<div class="row">
+    <form class="col s12" [formGroup]="userForm" (ngSubmit)="onGetUser()">
+        <div class="row">
+            <div class="input-field col s6">
+                <label for="id">Id usuario</label>
+                <input type="text" id="id" formControlName="id" required>
+            </div>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Obtener Usuario</button>
+    </form>
+</div>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Dias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ user.email }}</td>
+                <td>{{ user.password }}</td>
+                <td>{{ user.dias }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

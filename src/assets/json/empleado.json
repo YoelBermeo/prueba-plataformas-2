@@ -1,0 +1,24 @@
+[
+    {
+        "_id": 1,
+        "nombre": "Leanne Graham",
+        "edad": 23,
+        "correo": "Sincere@april.biz",
+        "website": "hildegard.org"
+        
+    },
+    {
+        "_id": 2,
+        "nombre": "Ervin Howell",
+        "edad": 25,
+        "correo": "Shanna@melissa.tv",
+        "website": "anastasia.net"
+    },
+    {
+        "_id": 3,
+        "nombre": "Clementine Bauch",
+        "edad": 34,
+        "correo": "Nathan@yesenia.net",
+        "website": "ramiro.info"
+    }
+]

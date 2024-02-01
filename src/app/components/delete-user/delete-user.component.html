@@ -1,0 +1,11 @@
+<div class="row">
+    <form class="col s12" [formGroup]="userForm" (ngSubmit)="onDeleteUser()">
+        <div class="row">
+            <div class="input-field col s6">
+                <label for="id">Id usuario</label>
+                <input type="text" id="id" formControlName="id" required>
+            </div>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Borrar Usuario</button>
+    </form>
+</div>

@@ -1,0 +1,11 @@
+# POST Request to Register a New User
+#POST http://localhost:3000/api-user/registro
+#Content-Type: application/json
+
+#{
+ #   "email": "carlos09n@gmail.com",
+  #  "password": "12345"
+#}
+
+GET http://localhost:3000/api-user
+Content-Type: application/json

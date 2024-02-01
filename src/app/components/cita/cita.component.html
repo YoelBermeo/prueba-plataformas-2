@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="row">
+    <div class="col s5">
+      <div class="card">
+        <div class="card-content">
+          <form #citaForm="ngForm" (ngSubmit)="addCita(citaForm)">
+            <div class="row">
+              <div class="input-field col s12">
+                <input
+                  type="text"
+                  name="nombre"
+                  #nombre="ngModel"
+                  [(ngModel)]="citaService.selectedCita.nombre"
+                  placeholder="Ingrese el nombre"
+                  required
+                />
+              </div>
+              <div class="input-field col s12">
+                <input
+                  type="text"
+                  name="cedula"
+                  #cedula="ngModel"
+                  [(ngModel)]="citaService.selectedCita.cedula"
+                  placeholder="Ingrese la cédula"
+                  required
+                />
+              </div>
+              <div class="input-field col s12">
+                <input
+                  type="text"
+                  name="estado"
+                  #estado="ngModel"
+                  [(ngModel)]="citaService.selectedCita.estado"
+                  placeholder="Ingrese el estado"
+                  required
+                />
+              </div>
+              <div class="input-field col s12">
+                <input
+                  type="number"
+                  name="dias"
+                  #dias="ngModel"
+                  [(ngModel)]="citaService.selectedCita.dias"
+                  placeholder="Ingrese el número de días"
+                  required
+                />
+              </div>
+              <div class="input-field col s12">
+                <input
+                  type="date"
+                  name="fechaInicio"
+                  #fechaInicio="ngModel"
+                  [(ngModel)]="citaService.selectedCita.fechaInicio"
+                  placeholder="Ingrese la fecha de inicio"
+                  required
+                />
+              </div>
+              <div class="input-field col s12">
+                <input
+                  type="date"
+                  name="fechaFin"
+                  #fechaFin="ngModel"
+                  [(ngModel)]="citaService.selectedCita.fechaFin"
+                  placeholder="Ingrese la fecha de fin"
+                  required
+                />
+              </div>
+              <!-- <div class="input-field col s12">
+                <button
+                  class="btn waves-effect waves-light"
+                  type="submit"
+                  [disabled]="!citaForm.valid"
+                >
+                  Guardar
+                </button>
+              </div> -->
+            </div>
+            <div class="card-action">
+              <div class="input-field col s12">
+                <button class="btn right">Grabar</button>
+                <button class="btn right" (click)="resetForm(citaForm)">Borrar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
